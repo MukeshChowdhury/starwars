@@ -1,0 +1,38 @@
+<!-- <mat-tab-group class="mat-tab" mat-align-tabs="center" animationDuration="0ms">
+  <mat-tab label="Star Wars"><app-movie-list></app-movie-list></mat-tab>
+  <mat-tab label="Avengers"></mat-tab>
+</mat-tab-group> -->
+<!-- <nav mat-tab-nav-bar class="mat-nav-tab" mat-align-tabs="center">
+    <a class="anchor"
+        mat-tab-link
+       *ngFor="let link of links"
+        routerLink="/movies"
+        routerLinkActive #rla="routerLinkActive"
+        [active]="rla.isActive">
+      {{link}}
+    </a>
+  </nav>
+  
+  <router-outlet></router-outlet> -->
+
+  <nav mat-tab-nav-bar class="mat-nav-tab" mat-align-tabs="center">
+    <a 
+      class="anchor"
+      mat-tab-link
+      routerLink="/movies"
+      routerLinkActive #rla="routerLinkActive"
+      [active]="rla.isActive">
+      StarWars
+    </a>
+
+      <a 
+      class="anchor"
+      routerLink="/movies"
+      mat-tab-link
+      routerLink="/movies"
+      routerLinkActive #rla="routerLinkActive"
+      [active]="rla.isActive">
+      Avengers
+    </a>
+  </nav>
+  <router-outlet></router-outlet>

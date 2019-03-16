@@ -1,0 +1,15 @@
+<mat-card class="m-card" *ngIf="lmovie">
+    <mat-card-header class="mat-card-header" fxLayoutAlign="center center">
+        <mat-card-title>{{lmovie.title}}</mat-card-title>
+        <mat-card-subtitle>Episode Id: {{lmovie.episode_id}}</mat-card-subtitle>
+    </mat-card-header>
+
+    <img mat-card-image [src]='getImageUrl(lmovie.episode_id)'
+                        [style.width.px]='width'
+                        [style.height.px]='height'>
+    <mat-card-content>
+      <p>
+        {{lmovie.opening_crawl}}
+      </p>
+    </mat-card-content>
+</mat-card>

@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import '~font-awesome/css/font-awesome.min.css';
+/* @import "../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css"; */
+
+body{
+    background-image: url("https://www.wallpapers.net/web/wallpapers/free-lego-star-wars-hd-wallpaper-for-desktop-mobiles/3840x2160.jpg");
+     background-size: 100%; 
+     
+    
+    
+}
